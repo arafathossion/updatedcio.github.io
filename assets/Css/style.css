@@ -1,0 +1,832 @@
+*{
+    margin: 0;
+    outline:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.bg-color{
+    background-color: #03132D;
+}
+
+/* =====Nav Area Start===== */
+.logo{
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 0;
+    text-transform: uppercase;
+}
+.logo-title{
+    font-size: 17px;
+    margin: -10px 0 10px 0;
+}
+.menu li a{
+    font-weight: 700;
+    padding: 27px 15px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+/* =====Nav Area End===== */
+
+
+/* =====Main Content Area Start===== */
+.single-content-img img{
+    width: 100%;
+    height: 500px;
+}
+.history-heading h1{
+    font-size: 55px;
+    font-weight: 700;
+    position: relative;
+}
+.history-heading h1::before{
+    position: absolute;
+    content: "";
+    top: 78px;
+    left: 23px;
+    width: 100px;
+    height: 3px;
+    background-color: #03132D;
+}
+.history-heading h1::after{
+    position: absolute;
+    content: "";
+    top: 78px;
+    right: 29px;
+    width: 100px;
+    height: 3px;
+    background-color: #03132D;
+}
+.history-heading img{
+    margin: -10px 0 0;
+}
+.history-content h3{
+    color: #03132D;
+    padding: 0 0 5px 0;
+    text-align: center;
+}
+.history-content ul li{
+    padding: 5px 0;
+    font-size: 17px;
+}
+.history-content .history-para{
+    font-size: 16px;
+    color: rgb(0, 0, 0) !important;
+    line-height: 26px;
+    word-spacing: 4px;
+    text-align: justify;
+    transition: all linear .9s;
+}
+.history-content-shadow{
+    border-radius: 20px;
+    box-shadow:inset  10px 10px 20px  rgba(236, 234, 234, 0.76),  inset -10px -10px 20px  rgba(236, 234, 234, 0.76);
+    transition: all linear .9s !important;
+}
+.history-content-shadow:hover{
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px  rgba(32, 32, 51, 0.192),-10px -10px 20px  rgba(32, 32, 51, 0.192);
+    transition: all linear .9s !important;
+}
+.history-content-img {
+    position: relative;
+}
+.history-content-img:hover .history-content-overlay{
+    width: 92%;
+    left: 14px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.history-content-img img{
+    width: 100%;
+    min-height: 387.8px;
+    border-radius: 20px; 
+    overflow: hidden;
+}
+.history-content-overlay{
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    bottom:0 ;
+    left:96%;
+    overflow: hidden;
+    width: 0;
+    min-height: 387px;
+    transition: .5s ;
+    background-color: rgba(1, 204, 255, 0.212);
+} 
+.history-content-overlay a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 170px;
+    height: 50px;
+    line-height: 35px;
+    border: 2px solid white;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:white ;
+    transition: all linear .9s;
+}
+.history-content-overlay a:hover{
+    color: #03132D;
+    background-color: white;
+    border: 2px solid #03132D;
+    font-weight: 700;
+}
+.history-content-overlay a i{    
+    position: absolute;
+    top: 33%;
+    left: 74%;
+    color: transparent;
+    opacity: 0;
+    transition: all linear .6s;
+}
+.history-content-overlay a:hover i{
+    color: #03132D !important;
+    left: 85%;
+    opacity: 1;
+}
+.latest-heading h1{
+    font-size: 55px;
+    font-weight: 700;
+    position: relative;
+}
+.latest-heading h1::before{
+    position: absolute;
+    content: "";
+    top: 78px;
+    left: 9px;
+    width: 100px;
+    height: 3px;
+    background-color: #03132D;
+}
+.latest-heading h1::after{
+    position: absolute;
+    content: "";
+    top: 78px;
+    right: 13px;
+    width: 100px;
+    height: 3px;
+    background-color: #03132D;
+}
+.latest-heading img{
+    margin: -10px 0 0;
+}
+/* =====Main Content Area End===== */
+
+
+/* ======Time Line Area Css Start====== */
+.single-time-line  h1,h4{
+    color: white;
+    font-size: 40px;
+}
+.card{
+    width: 349px;
+    height: 349px;
+    perspective: 600px;
+    border: 2px solid #03132D;
+}
+.card1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: linear 1s;
+    transform-style: preserve-3d;
+}
+.card:hover .card1{
+    transform: rotatex(90deg);
+}
+.fornt{
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back{
+    background-color:  rgb(255, 255, 255) !important;
+   
+    border-radius: 5px;
+    position: absolute;
+    height: 100%;
+    width:  100%;
+    transform: rotatex(-90deg);
+}
+
+.back .single-time-line-content h2{
+    color: #03132D !important;
+    font-size: 40px !important;
+}
+.back .single-time-line-content p{
+    color: #03132D !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+.back-last{
+    font-size: 17px !important;
+}
+/* ======Time Line Area Css End====== */
+
+/* ======About Page Css Start====== */
+.about-content-header h1{
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+}
+.about-content-header h1::before{
+    position: absolute;
+    content: "";
+    top: 75px;
+    left: 3px;
+    width: 46px;
+    height: 3px;
+    background-color: #03132D;
+}
+.about-content-header h1::after{
+    position: absolute;
+    content: "";
+    top: 75px;
+    right: 8px;
+    width: 46px;
+    height: 3px;
+    background-color: #03132D;
+}
+/* ======About Page Css End====== */
+
+/* =====Award Winner Page Css Start===== */
+/* =====Single Award Winner Content Header Start===== */
+.single-award-winner-content-header h1{
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+}
+.single-award-winner-content-header h1::before{
+    position: absolute;
+    content: "";
+    top: 65px;
+    left: 23px;
+    width: 100px;
+    height: 3px;
+    background-color: #03132D;
+}
+.single-award-winner-content-header h1::after{
+    position: absolute;
+    content: "";
+    top: 65px;
+    right: 29px;
+    width: 100px;
+    height: 3px;
+    background-color: #03132D;
+}
+/* =====Single Award Winner Content Header Start===== */
+
+/* =====Single Award Winner Content===== */
+.single-award-winner-content{
+    position: relative;
+    z-index: 23123;
+    transition: all linear 3s;
+    overflow: hidden;
+    border-top: 1px solid transparent;
+}
+.single-award-winner-content:hover{
+    background-color: #03132D;
+    color: white;
+    border-top: 1px solid #03132D;
+}
+.single-award-winner-content::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: -4px;
+    width: 100%;
+    height: 74%;
+    background-color: #03132D;
+    clip-path: polygon(100% 0, 100% 30%, 50% 45%, 0 30%, 0 0);
+    z-index: -1;
+    transition: all linear 3s;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #03132D;
+}
+.single-award-winner-content:hover::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0px;
+    width: 100%;
+    height: 74%;
+    background-color: #ffffff;
+    clip-path: polygon(100% 0, 100% 30%, 50% 45%, 0 30%, 0 0);
+    z-index: -1;
+    border-left: 1px solid #03132D;
+    border-right: 1px solid #03132D !important;
+}
+.single-award-winner-content i{
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    color:white !important;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 12px;
+    font-size: 35px;
+    transition: all linear 2s;
+}
+.single-award-winner-content:hover i{
+    color: #03132D !important;
+    transform: scale(1.4);
+} 
+/* =====Single Award Winner Content===== */
+
+/* =====Award Winners Ceremony Css Start===== */
+/* Heading */
+.award-winner-content-header h1{
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+}
+.award-winner-content-header h1::before{
+    position: absolute;
+    content: "";
+    top: 65px;
+    left: 13px;
+    width: 90px;
+    height: 3px;
+    background-color: #03132D;
+}
+.award-winner-content-header h1::after{
+    position: absolute;
+    content: "";
+    top: 65px;
+    right: 18px;
+    width: 90px;
+    height: 3px;
+    background-color: #03132D;
+}
+/* Content */
+.award-winner-content{
+    width: 100%;
+    min-height: 250px;
+    border-radius: 5px;
+    box-shadow:inset 5px 5px 20px 0px rgba(0, 0, 0, 0.15),inset -5px -5px 20px 0px rgba(0, 0, 0, 0.15) !important;
+}
+.award-winner-content p{
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 5px 0;
+}
+/* Image */
+.award-winner-img img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    transition: all linear .9s;
+    opacity: .6;
+}
+.award-winner-img:hover > img{
+    opacity: 1;
+    overflow: hidden;
+}
+/* Award Social Link */
+.award-social-link{
+    width: 92%;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    transition: all linear .9s;
+    opacity: 0;
+    overflow: hidden;
+}
+.award-winner-img:hover .award-social-link{
+    bottom: 0;
+    opacity: 1;
+    z-index: 123432435 !important;
+    background-color: rgba(240, 255, 255, 0.329);
+}
+.award-social-link a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #03132D;
+    text-align: center;
+    line-height: 50px;
+    color: red;
+    transition: all linear .9s;
+    overflow: hidden;
+}
+.award-social-link a:hover{
+    color: aqua;
+    border: 2x solid red;
+    background-color: #03132D;
+    
+}
+.award-social-link i{
+    transition: all linear .9s;
+    font-size: 20px;
+}
+.award-social-link a:hover i{
+    transform: scale(1.5);
+}
+/* =====Award Winners Ceremony Css End===== */
+
+/* =====Award Winning year Detail Start===== */
+.single-award-year-detail-heading {
+    color: white;
+    padding-top: 60px;
+}
+.col-lg-3 .card{
+    width: 255px;
+    height: 255px;
+    perspective: 600px;
+    border: 2px solid #03132D;
+}
+.col-lg-3 .card1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: linear 1s;
+    transform-style: preserve-3d;
+}
+.col-lg-3 .card:hover .card1{
+    transform: rotatex(90deg);
+}
+.col-lg-3 .fornt{
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.col-lg-3 .back{
+    background-color:  black !important;
+   
+    border-radius: 5px;
+    position: absolute;
+    height: 100%;
+    width:  100%;
+    transform: rotatex(-90deg);
+}
+/* =====Award Winning year Detail End===== */
+/* =====Award Winner Css Page End===== */
+
+
+
+/* =====Contact Page Start===== */
+.google-map{
+
+    border-radius: 5px;
+}
+
+.contact-envelope{
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    width: 780px;
+}
+.contact-envelope::before{
+    position: absolute;
+    content: "";
+    bottom: 123px;
+    left: -21px;
+    width: 25px;
+    height: 110px; 
+    background-color: #03132D;
+    transform: rotate(43deg);
+}
+.contact-envelope::after{
+    position: absolute;
+    content: "";
+    bottom: 125px;
+    right: -22px;
+    width: 25px;
+    height: 114px;
+    background-color: #010e24 !important;
+    transform: rotate(-43deg);
+    z-index: -567567;
+}
+.form-control{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    
+}
+.contact-form{
+    position: relative;
+    padding: 10px 10px 120px 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+}
+.contact-form::before{
+    position: absolute;
+    content: '';
+    bottom: -50px;
+    left: -179px;
+    width: 682px;
+    height: 169px;
+    background-color: #05204b;
+    transform: rotate(22deg);
+    z-index: 12;
+}
+.contact-form::after{
+    position: absolute;
+    content: '';
+    bottom: -50px;
+    right: -179px;
+    width: 682px;
+    height: 169px;
+    background-color: #03132D;
+    transform: rotate(-22deg);
+}
+.form-group input[type="email"],input[type="text"]{
+    color: rgb(2, 217, 255) !important;
+}
+textarea{
+    color: aqua !important;
+    font-size: 22px !important;    
+}
+
+.contact-button{
+    width: 180px;
+    height: 50px;
+    background-color: #03132D;
+    color: white;
+    border: 2px solid transparent;
+    position: relative;
+    transition: all linear .6s;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.contact-button:hover{
+    color: #03132D;
+    background-color: white;
+    border: 2px solid #03132D;
+    font-weight: 700;
+}
+.contact-button i{
+    position: absolute;
+    top: 5%;
+    left: 64%;
+    color: transparent;
+    opacity: 0;
+    transition: all linear .6s;
+}
+.contact-button:hover i{
+    left: 75%;
+    color: #03132D;
+    opacity: 1;
+}
+/* =====Contact Page End===== */
+
+/* ======The Beginning Page Css Start====== */
+.beginning-header h1{
+    font-size: 55px;
+    font-weight: 700;
+    position: relative;
+}
+.beginning-header h1::before{
+    position: absolute;
+    content: "";
+    top: 87px;
+    left: 310px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.beginning-header h1::after{
+    position: absolute;
+    content: "";
+    top: 87px;
+    right: 315px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+/* ======The Beginning Page Css End====== */
+/* ======IN 1995 Page Css Start====== */
+.in-1995-header h1{
+    font-size: 55px;
+    font-weight: 700;
+    position: relative;
+}
+.in-1995-header h1::before{
+    position: absolute;
+    content: "";
+    top: 87px;
+    left:205px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.in-1995-header h1::after{
+    position: absolute;
+    content: "";
+    top: 87px;
+    right:210px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+/* ======IN 1995 Page Css End====== */
+/* ======IN 2000 Page Css Start====== */
+.in-2000-content{
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+}
+.in-2000-content::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #0099ff38;
+}
+.in-2000-header h1{
+    font-size: 55px;
+    font-weight: 700;
+    position: relative;
+}
+.in-2000-header h1::before{
+    position: absolute;
+    content: "";
+    top: 87px;
+    left:175px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.in-2000-header h1::after{
+    position: absolute;
+    content: "";
+    top: 87px;
+    right:180px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.in-2000{
+    font-size: 16px;
+}
+/* ======IN 2000 Page Css End====== */
+/* ======IN 2008 Page Css Start====== */
+.in-2008-content{
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+}
+.in-2008-content::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #020202b6;
+}
+.in-2008-header h1{
+    font-size: 55px;
+    font-weight: 700;
+    position: relative;
+}
+.in-2008-header h1::before{
+    position: absolute;
+    content: "";
+    top: 87px;
+    left:275px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.in-2008-header h1::after{
+    position: absolute;
+    content: "";
+    top: 87px;
+    right:280px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.in-2008{
+    font-size: 16px;
+}
+/* ======IN 2008 Page Css End====== */
+/* ======IN 2010-2019 Page Css Start====== */
+.in-2010-2019-content{
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+}
+.in-2010-2019-content::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #00c3ff1c;
+}
+.in-2010-2019-header h1{
+    font-size: 55px;
+    font-weight: 700;
+    position: relative;
+}
+.in-2010-2019-header h1::before{
+    position: absolute;
+    content: "";
+    top: 87px;
+    left:115px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.in-2010-2019-header h1::after{
+    position: absolute;
+    content: "";
+    top: 87px;
+    right:120px;
+    width: 200px;
+    height: 3px;
+    background-color: #03132D;
+}
+.in-2010-2019{
+    font-size: 16px;
+}
+/* ======IN 2010-2019 Page Css End====== */
+/* footer */
+.fotter_line{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.fotter_social_link a i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.fotter_social_link a i:hover{
+    color: #03132D;
+    border: 1px solid #03132D;
+}
+.last-pain{
+    font-size: 30px !important;
+   
+}
+.anis a{
+    color: rgba(255, 255, 255, 0.5);
+    transition: all linear .6s;
+}
+.anis a:hover{
+    color: #03132D !important;
+}
+.tweeter_icon{
+    transition: all linear .6s;
+}
+.tweeter_part:hover .tweeter_icon{
+    color: #03132D !important;
+}
+.we{
+    line-height: 25px;
+}
+.address_part a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-us-btn{
+    width: 150px;
+    height: 50px;
+    line-height: 32px;
+    background-color: #03132D;
+    color: wheat;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: all linear .7s;
+}
+.contact-us-btn:hover{
+    border: 2px solid #03132D;
+    background-color:white;
+    color:  #03132D;
+    text-decoration: none;
+    font-weight: 700;
+}
+
